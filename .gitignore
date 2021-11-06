@@ -102,10 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-#idea settings 
-.idea
-
-#peter dev
-test
-.eslintrc.json
