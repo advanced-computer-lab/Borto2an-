@@ -1,1 +1,1 @@
-web: npm run conc
+web: yarn conc
