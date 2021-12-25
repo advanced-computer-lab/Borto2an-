@@ -1,0 +1,25 @@
+Mohamed Eshiba:
+Sign up
+password encryption
+sign in
+
+Youssef Amin:
+update user schema to include first name, last name, home address, country code, telephone number, email, and passport number
+<<updating the user schema required the user front end CRUD forms to be updates>>
+erorr messages in login
+
+Omar Khair:
+stripe API
+
+Hesham Moneer:
+Nodemailer (created reservation, deleted reservation, reservation itinerary, forgot password)
+
+Peter Fahmi:
+The user shall enter their old passowrd to be able to change their password to a new one
+
+Update reservation Journey:
+Update reservation in the reservation details --> Mohamed Eshiba
+Search flights --> Hesham Moneer
+Flights results --> Peter Fahmi
+Select seats --> Omar Khair
+Trip summary --> Youssef Amin
