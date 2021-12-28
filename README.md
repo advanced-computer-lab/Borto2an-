@@ -13,10 +13,20 @@ Borto2an is currently available only on local host. So, stay tuned for our launc
 >**Note**: 
 >This project is done for educational purposes only. Please, don't use your real credit card to pay inside the website.
 
+## Code Style
+We followed the standard JavaScript coding style and naming conventions.
+
+## Screenshots
+You can find screenshots and walk-through video of our cool website [Here](https://drive.google.com/drive/folders/1NatW0ytpEeFQMouVQ-DKx2x-LKToZ1jC?usp=sharing).
+
 ## Tech Used
 1. MERN Stack (MongoDB, Express JS, React JS and Node JS) for development. 
 2. Git for version control and GitHub for collaboration.
-4. MUI components in frontend.
+3. MUI components in frontend.
+4. Stripe API for payment.
+5. Node Mailer for sending emails.
+6. JWT for authorization.
+7. Heroku for deployment (soon)
 
 ## Installation
 
@@ -117,7 +127,22 @@ Endpoint| Usage
 :------------: | :------------:
 POST ```/create-session``` | create a new Stripe payment session for a given reservation
 	
-	
+## How to Use?
+A typical user journey on Borto2an Airways is as follows:
+1. Create or sign in into your account.
+2. Search for flights in the home page and specify your start and destination.
+3. Choose the most suitable departure and return flights, along with the preferred cabin.
+4. Select the seats from the list of available seats.
+5. See a summary of your reservation, in addition to the price to be paid.
+6. Pay for your reservation using credit card. You have successfully reserved your flight.
+7. Go to your profile and see all your reservations.
+8. Edit or delete your reservations as you wish.
+
+If you are still confused on how to use our website, please refer to our demonstration [video](https://drive.google.com/drive/folders/1NatW0ytpEeFQMouVQ-DKx2x-LKToZ1jC?usp=sharing).
+## Contribute
+If you want to contribute to this project, email me at omarkhair66@gmail.com. 
+You are welcome to contribute at any time, and your effort is highly appreciated. 	
+
 ## Credits
 Borto2an is up and running thanks to the effort of these people.
 	

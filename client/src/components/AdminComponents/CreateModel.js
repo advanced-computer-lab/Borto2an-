@@ -97,7 +97,7 @@ class CreateModel extends React.Component {
                 paddingBottom: "50px",
               }}
             >
-              <div class="TripTitleText">Creat Flight Model</div>
+              <div class="TripTitleText">Create Flight Model</div>
               <img
                 class="Trip-bg"
                 src="admin.jpg"
@@ -179,7 +179,9 @@ class CreateModel extends React.Component {
                         name="economyRows"
                         onChange={this.onChange}
                         label="No. economy rows"
+                        
                         fullWidth
+                       
                       />
                     </Grid>
                     <br />

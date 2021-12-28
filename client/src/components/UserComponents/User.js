@@ -3,6 +3,7 @@ import { Component } from 'react';
 import axios from 'axios';
 import Stack from "@mui/material/Stack";
 import Button from "../Button" ;
+import MUIButton from '@mui/material/Button';
 // import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -41,8 +42,8 @@ const Edit =({
 })=>
     <form onSubmit={onSubmit} style={{marginBottom:"15px"}}>
         {children}
-      <Button type="submit" variant="contained"
-              sx={{ mt: 3, mb: 2 ,backgroundColor:"#ee0000"}}>Change your profile picture </Button>
+      <MUIButton type="submit" variant="contained"
+              sx={{ mt: 3, mb: 2 ,backgroundColor:"#ee0000"}}>Change your profile picture </MUIButton>
     </form>
 
 class User extends Component {

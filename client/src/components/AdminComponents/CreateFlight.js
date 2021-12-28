@@ -189,7 +189,7 @@ class CreateFlight extends React.Component {
             paddingBottom: "50px",
           }}
         >
-           <div class="TripTitleText">Search For Flights</div>
+           <div class="TripTitleText">Create Flight</div>
           <img class="Trip-bg" src="admin.jpg" style = {{
             left : "400px",
             opacity : "0.7",top:-120
