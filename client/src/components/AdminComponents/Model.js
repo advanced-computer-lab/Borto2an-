@@ -113,7 +113,7 @@ function Flight({ _id,name, economyRows, economyColumns, businessRows, businessC
           </DialogContent>
           <DialogActions>
             <button onClick={handleClose}>Cancel</button>
-            <button onClick={()=>deleteModel(_id)} autoFocus>
+            <button onClick={()=>{deleteModel(_id);setOpen(false);}} autoFocus>
               Delete
             </button>
           </DialogActions>

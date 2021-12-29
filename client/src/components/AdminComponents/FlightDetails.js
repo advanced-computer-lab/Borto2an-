@@ -19,6 +19,7 @@ class FlightDetails extends React.Component {
     this.state = {
       flights: [],
       open: false,
+      message:""
     };
   }
 
@@ -64,11 +65,16 @@ class FlightDetails extends React.Component {
     const handleDelete = () => {
       axios
         .delete(
-          `http://localhost:8000/api/flights/${this.state.flights[0]?._id}`
+          `http://localhost:8000/api/flights/${this.state.flights[0]?._id}`,{
+            headers: { authorization: "Bearer " + localStorage.getItem("token") },
+          }
         )
         .then(() => {
-          console.log("deleted succesfully");
-          this.props.history.push("/");
+          console.log("deleted Successfully");
+          this.setState({ message: "Flight Deleted Successfully" });
+          setTimeout(() => {
+            this.props.history.push("/");
+          }, 2000);
         })
         .catch((e) => {
           console.log(e);
@@ -311,6 +317,7 @@ class FlightDetails extends React.Component {
               label = "Delete"
               onClick={handleClickOpen}
             />
+             
 
 <MyButton
               index={1}
@@ -319,6 +326,19 @@ class FlightDetails extends React.Component {
             />
 
           
+          </Stack>
+          <Stack spacing ={5} direction = "row" style={{
+            justifyContent:"space-around",mt:2
+          }}>
+          <label
+                        style={{
+                          font: "20px Montserrat",
+                          color: "rgba(200,50,50,0.8)",
+                          marginTop:"15px"
+                        }}
+                      >
+                        {this.state.message}
+                      </label>
           </Stack>
           </div>
 
