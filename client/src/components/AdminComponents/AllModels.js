@@ -62,6 +62,7 @@ class AllFlights extends Component {
       .catch((err) => {
         alert("Error occurred in deletion");
       });
+      this.setState({open:false});
   };
 
   render() {
